@@ -22,9 +22,9 @@ Our approach outperforms other state-of-the-art time series classification algor
 
 ### Sentinel-Agri dataset 
 
-We use the Sentinel-Agri dataset available on this [github repo](https://github.com/VSainteuf/pytorch-psetae).
+We use the Sentinel-Agri dataset available on this [github repository](https://github.com/VSainteuf/pytorch-psetae).
 The dataset is comprised of time series of satellite images of agricultural parcels. Check the "Data Format" section 
-of the `pytorch-psetae` repos for more details on the data.
+of the [repository](https://github.com/VSainteuf/pytorch-psetae)  for more details on the data.
 
 ### Pre-trained weights
 
