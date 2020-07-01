@@ -57,6 +57,27 @@ You can use the same script to play around with the model's hyperparameters, or 
 
 ## Reference
 
-*Lightweight Temporal Self-Attention  for Classifying Satellite Images Time Series*, Sainte Fare Garnot V. and Landrieu L. 
 
-(proper reference coming soon)
+Please include a citation to the following paper if you use the L-TAE (proper reference coming soon).
+
+```
+@article{garnot2019psetae,
+  title={Lightweight Temporal Self-Attention  for Classifying Satellite Images Time Series},
+  author={Sainte Fare Garnot, Vivien  and Landrieu, Loic},
+  journal={},
+  year={2020}
+}
+
+```
+
+Make sure to also include a citation to the PSE+TAE paper below if you are using the Pixel-Set Encoder.
+
+```
+@article{garnot2019psetae,
+  title={Satellite Image Time Series Classification with Pixel-Set Encoders and Temporal Self-Attention},
+  author={Sainte Fare Garnot, Vivien  and Landrieu, Loic and Giordano, Sebastien and Chehata, Nesrine},
+  journal={CVPR},
+  year={2020}
+}
+
+```
