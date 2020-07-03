@@ -1,5 +1,6 @@
 # Lightweight Temporal Self-Attention (PyTorch)
 A PyTorch implementation of the Light Temporal Attention Encoder (L-TAE) for satellite image time series classification.
+(see [preprint here](https://arxiv.org/abs/2007.00586))
 
 
 ![](./gfx/LTAE4fix.jpg)
@@ -8,7 +9,7 @@ Building on recent work employing multi-headed self-attention mechanisms to clas
 In our network, the channels of the temporal inputs are distributed among several compact attention heads operating in parallel. Each head extracts highly-specialized temporal features which are in turn concatenated into a single representation.
 Our approach outperforms other state-of-the-art time series classification algorithms on an open-access satellite image dataset, while using significantly fewer parameters and with a reduced computational complexity.*
 
-
+(see [preprint here](https://arxiv.org/abs/2007.00586))
 
 ## Requirements
  - PyTorch + Torchnet
@@ -28,7 +29,9 @@ of the [repository](https://github.com/VSainteuf/pytorch-psetae)  for more detai
 
 ### Pre-trained weights
 
-Coming soon!
+Pre-trained weights of the PSE+LTAE model available [here](https://zenodo.org/record/3929717#.Xv9lmZMzbOQ)
+
+Use the `models.stclassifier.PseLTae_pretrained` class to instanciate the pre-trained model.
 
 ## Code
 
@@ -58,13 +61,14 @@ You can use the same script to play around with the model's hyperparameters, or 
 ## Reference
 
 
-Please include a citation to the following paper if you use the L-TAE (proper reference coming soon).
+Please include a citation to the following paper if you use the L-TAE.
+
 
 ```
-@article{garnot2019psetae,
+@article{garnot2020ltae,
   title={Lightweight Temporal Self-Attention  for Classifying Satellite Images Time Series},
   author={Sainte Fare Garnot, Vivien  and Landrieu, Loic},
-  journal={},
+  journal={arXiv preprint arXiv:2007.00586},
   year={2020}
 }
 
@@ -73,7 +77,7 @@ Please include a citation to the following paper if you use the L-TAE (proper re
 Make sure to also include a citation to the PSE+TAE paper below if you are using the Pixel-Set Encoder.
 
 ```
-@article{garnot2019psetae,
+@article{garnot2020psetae,
   title={Satellite Image Time Series Classification with Pixel-Set Encoders and Temporal Self-Attention},
   author={Sainte Fare Garnot, Vivien  and Landrieu, Loic and Giordano, Sebastien and Chehata, Nesrine},
   journal={CVPR},
