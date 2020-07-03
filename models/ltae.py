@@ -16,7 +16,7 @@ import copy
 
 
 class LTAE(nn.Module):
-    def __init__(self, in_channels=128, n_head=10, d_k=32, n_neurons=[256], dropout=0.2, d_model=None,
+    def __init__(self, in_channels=128, n_head=16, d_k=8, n_neurons=[256,128], dropout=0.2, d_model=256,
                  T=1000, len_max_seq=24, positions=None, return_att=False):
         """
         Sequence-to-embedding encoder.

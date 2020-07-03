@@ -17,8 +17,8 @@ class PseLTae(nn.Module):
 
     def __init__(self, input_dim=10, mlp1=[10, 32, 64], pooling='mean_std', mlp2=[132, 128], with_extra=True,
                  extra_size=4,
-                 n_head=10, d_k=32, d_model=None, mlp3=[128], dropout=0.2, T=1000, len_max_seq=24, positions=None,
-                 mlp4=[128, 64, 32, 20], return_att=False, learn_query=True,half_pe=False, pe_var=False):
+                 n_head=16, d_k=8, d_model=256, mlp3=[256, 128], dropout=0.2, T=1000, len_max_seq=24, positions=None,
+                 mlp4=[128, 64, 32, 20], return_att=False):
         super(PseLTae, self).__init__()
         self.spatial_encoder = PixelSetEncoder(input_dim, mlp1=mlp1, pooling=pooling, mlp2=mlp2, with_extra=with_extra,
                                                extra_size=extra_size)
@@ -72,7 +72,7 @@ class PseLTae_pretrained(nn.Module):
         Args:
             weight_folder (str): Path to the folder containing the different sets of weights obtained during each fold
             (res_dir of the training script)
-            hyperparameters (dict): Hyperparameters of the PseTae classifier
+            hyperparameters (dict): Hyperparameters of the PseLTae classifier
             device (str): Device on which the model should be loaded ('cpu' or 'cuda')
             fold( str or int): load all folds ('all') or number of the fold to load
         """
