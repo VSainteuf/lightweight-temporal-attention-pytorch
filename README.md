@@ -43,9 +43,14 @@ The four architectures are found in `models.stclassifier`.
 Use the `train.py` script to train the 150k-parameter L-TAE based classifier (by default). 
 You will only need to specify the path to the dataset folder:
 
-`python train.py --dataset_folder path_to_sentinel-agri_pixelset_dataset`
+`python train.py --dataset_folder path_to_sentinelagri_pixelset_dataset`
 
 You can use the same script to play around with the model's hyperparameters, or train an instance of a competing architecture.
+
+To train the precise configurations that were used to produce the figure, add the arguments that are listed in the `config_fig2.json` file.
+ For example, the following command will train the 9k-parameter L-TAE instance:
+ 
+`python train.py --dataset_folder path_to_sentinelagri_pixelset_dataset --n_head 8 --d_k 8 --mlp3 [128]`
 
 
 ![](./gfx/paramperf.jpg)
